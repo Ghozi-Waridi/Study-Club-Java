@@ -8,11 +8,13 @@ public class StudyCase {
     int nilai = input.nextInt();
 
     // Melakukan Pengecekan dengan menggunakan ternary operator
-    String status = (nilai >= 70) ? "Lulus"
-        : (nilai >= 50) ? "agak lulus" : (nilai == 0) ? "Tidak lulussss" : "Drout OUt";
+    String status = (nilai >= 70) ? "Lulus" : "Tidka Lulus";
     System.out.println("Status: " + status);
 
+    // Melakukan pengecekan dengan menggunakan if-else, untuk menentukan kategori
+    // nilai
     char kategori;
+    // Terdapat 4 Kondisi dan 1 kondisi salah.
     if (nilai >= 85) {
       kategori = 'A';
     } else if (nilai != 70) {
@@ -24,6 +26,8 @@ public class StudyCase {
     }
 
     System.out.println("Keterangan: ");
+    // Melakukan pengecekan dengan menggunakan switch-case, untuk menentukan
+    // keterangan kategori.
     switch (kategori) {
       case 'A':
         System.out.println("Sangat Baik, pertahankan!");
@@ -39,6 +43,7 @@ public class StudyCase {
         break;
     }
 
+    // Melakukan pengecekan untuk menentukan keterangan kategori dengan if-else.
     if (kategori == 'A') {
 
       System.out.println("Sangat Baik, pertahankan!");

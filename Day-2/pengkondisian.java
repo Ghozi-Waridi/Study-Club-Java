@@ -7,6 +7,13 @@ public class pengkondisian {
     // angka++;
     // System.out.println(angka);
 
+    /**
+     * Pengkondisian If-Else
+     * Terdapat beberaoa struktur yaitu kondisi untuk mentukan nilai benar atau
+     * salah
+     * nilai benar dan salah itu akan menentukan aksi mana yang akan di jalankan /
+     * di eksekusi.
+     */
     int time = 20;
 
     if (time < 18) {
@@ -20,7 +27,12 @@ public class pengkondisian {
 
     System.out.println("=======================");
     /**
-     * 
+     * Siwtch Case
+     * Pengkondisin ini sama halnya dengan kondisi yang lain namun kondisi ini lebih
+     * simpel,
+     * atau bisa di bilang versi LITE daru if-else, dalam switch case ini kita tidak
+     * bisa melakukan
+     * kondisi lain, kita hanya bisa mengecek nilai yang sama saja.
      */
     int nilai = 80;
     switch (nilai) {
@@ -40,6 +52,10 @@ public class pengkondisian {
 
     System.out.println("=======================");
 
+    /**
+     * Ternary Operator
+     * Ternary Operator adalah pengkondisian yang lebih simple dari pada if-else
+     */
     int umur = 100;
     String orang = (umur == 100) ? "tua" : "dewasa";
 
